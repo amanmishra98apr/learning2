@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+  </head>
+  <body>
+    <form method="POST" class="post-form" action="/std/">
+      {% csrf_token %}
+        <br>
+            <h3>enter details</h3>
+              <label>name</label>
+                {{form.name}}
+                <br>
+                  <label>branch</label>
+                    {{form.branch}}
+                    <br>
+                      <label>address</label>
+                        {{form.address}}
+                        <br>
+                        <label >marks</label>
+                            {{form.marks}}
+                            <br>
+                                <button type="submit" class="btn btn-primary">submit</button>
+  </body>
+</html>
